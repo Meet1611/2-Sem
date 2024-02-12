@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <style>
+        div{
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        fieldset{
+            width: 100%;
+        }
+
+        .textarea{
+            width: 100%;
+        }
+
+        .main{
+            width: 100%;
+            td{
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <form action="">
+            <h1>Employee Registration</h1>
+            <table class="main">
+                <tr>
+                    <td align="center">
+                        <fieldset> 
+                            <legend>Personal Information</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="id">Employee Id</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="text" name="id" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="name">Employee Name</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="text" name="name" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="email">Email Id</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="email" name="email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="contact">Contact Number</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="number" name="contact">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="status">Maritial Status</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="radio" name="status" id="">Married
+                                        <input type="radio" name="status" id="">Single
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <fieldset>
+                            <legend>Education / Experiance</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="edu">Education</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <textarea name="edu" id="" class="textarea"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="exp">Experiance</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <textarea name="exp" id="" class="textarea"></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"> 
+                        <fieldset>
+                            <legend>Job Details</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="desig">Designation</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <textarea name="desig" id=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="location">Job Location</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <select name="location" id="">
+                                            <option value="Rajkot" selected>Rajkot</option>
+                                            <option value="Ahemdabad">Ahemdabad</option>
+                                            <option value="Vadodra">Vadodra</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="salary">Salary</label>
+                                    </td>
+                                    <td>:</td>
+                                    <td>
+                                        <input type="number" name="salary" id="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <input type="submit" name="" id="">
+                        <input type="reset" name="" id="" value="Cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

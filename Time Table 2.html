@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            text-align: center;
+        }
+
+        .blue{
+            border: 2px solid blue;
+            border-collapse: collapse;
+            tr,td{
+                border: 2px solid blue;
+            }
+        }
+
+        .yellow{
+            border: 2px solid yellow;
+            border-collapse: collapse;
+            td{
+                border: 2px solid yellow;
+            }
+        }
+
+        .red{
+            border: 2px solid red;
+            border-collapse: collapse;
+            height: 100px;
+            tr,td{
+                border: 2px solid red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table class="blue">
+        <tr>
+            <td>foo</td>
+            <td>bar</td>
+            <td>baz</td>
+        </tr>
+        <tr>
+            <td>
+                <table class="yellow">
+                     <tr class="yellow">
+                        <td>one</td>
+                        <td>two</td>
+                        <td>three</td>
+                    </tr>
+                    <tr class="yellow">
+                        <td>four</td>
+                        <td>five</td>
+                        <td>six</td>
+                    </tr>
+                    <tr class="yellow">
+                        <td>seven</td>
+                        <td>eight</td>
+                        <td>nine</td>
+                    </tr>
+                </table>
+            </td>
+            <td rowspan="2" colspan="2">
+                <table class="red">
+                    <tr>
+                        <td>eins</td>
+                        <td>zwei</td>
+                        <td rowspan="2 ">
+                            drei <br>
+                            sechs
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>vier</td>
+                        <td>funf</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>abc</td>
+        </tr>
+    </table>
+
+</body>
+</html>

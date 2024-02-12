@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        #button{
+            text-align: center;
+        }
+
+        #comments{
+            display: block;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        table{
+
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <div class="container">
+            <h1 class="center"> Student Registration</h1>
+            <fieldset>
+                <legend class="center">Personal Information</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name*</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </td>
+                        <td>
+                            <label for="password">Password*</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" placeholder="Enter your password" required>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email*</label>
+                        </td>
+                        <td colspan="3" id="email">
+                            <input type="email" name="email" placeholder="Enter your email number" width="250px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mob">Mobile Number</label>
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Enter your mobile number ">
+                        </td>
+                        <td>
+                            <label for="dob">Date of Birth</label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender">Male
+                        </td>
+                        <td>
+                            <label for="Hobbies">Hobbies</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Hobbies">Reading
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="radio" name="gender">Female
+                        </td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="Hobbies">Singing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="Hobbies">Cricket
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="Hobbies">Swimming
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cgpa">CGPA</label>
+                        </td>
+                        <td>
+                            <input type="range" step="10" name="cgpa">10.00
+                        </td>
+                        <td>
+                            <button>OR</button>
+                            <input type="number" name="cgpa" id="" width="min-"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="resume">Insert Resume</label>
+                        </td>
+                        <td>
+                            <input type="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="linkendin-url">LinkendIn URL</label>
+                        </td>
+                        <td colspan="3"> 
+                            <input type="text" placeholder="Please enter URL">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="button" colspan="4">
+                            <input type="submit">
+                            <input type="reset">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset> <br> <br>
+
+            <label for="comments" id="comments">Comments</label>
+            <textarea name="comments" id="" cols="100%" rows="10" placeholder="Please enter some suggestions"></textarea>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #a68a63;
+    position: relative;
+    height: 100vh;
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+/* .circle{
+    background-color: #242d2a;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    border-radius: 70%;
+    align-items: flex-start;
+} */
+
+.main{
+    position: relative;  
+    background-color: #eeeef0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/* .upper{
+     height: 90%; 
+     background-image: url(https://media.istockphoto.com/id/1171169099/photo/man-with-crossed-arms-isolated-on-gray-background.jpg?s=612x612&w=0&k=20&c=_vETAeGc6ooeOx-WZYFyZdUUL5hyDPrvakBpjytN7lM=); 
+     background-repeat: no-repeat;
+    background-position: top right;
+} */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    font-size: 20px;
+    float: left;
+    padding: 15px;
+    margin-left: 10px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+ul li a:hover{
+    color: #f64648;
+}
+
+.nav-right{
+    width: 200px;
+    padding: 8px 16px;
+}
+
+.search{
+    display: inline-block;
+    height:30px;
+    width: max-content;
+    text-align: center;
+}
+
+div:empty:not(:focus)::before{
+    content: attr(data-text);
+    color: grey;
+}
+
+#search-btn{
+    display: inline-block;
+    background-color: #f64648;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
